@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+
+<body>
+
+    <h1>Welcome to the Home Page</h1>
+    <table>
+		<thead>
+	    <tr>
+			<th>일자</th>
+			<th>순번</th>
+			<th>요청시/군</th>
+			<th>요청자 부서</th>
+			<th>요청자 성함</th>
+			<th>요청자 연락처</th>
+			<th>접수자</th>
+			<th>접수일시</th>
+			<th>접수상세내용</th>
+			<th>처리자</th>
+			<th>처리일시</th>
+			<th>처리상세내용</th>
+			<th>처리구분</th>
+			<th>접수자번호</th>
+			<th>처리자번호</th>
+			<th>접수팀</th>
+			<th>처리팀</th>
+		</tr>	
+		 </thead>
+		 <tbody>
+			  <!--
+        <tr th:each="item : ${list}">
+            <td th:text="${item[sch_d]}"></td>
+            <td th:text="${item[sch_seq]}"></td>
+            <td th:text="${item[req_org]}"></td>
+            <td th:text="${item[req_dept]}"></td>
+            <td th:text="${item[req_name]}"></td>
+            <td th:text="${item[req_tel]}"></td>
+            <td th:text="${item[rcpt_user]}"></td>
+            <td th:text="${item[rcpt_dt]}"></td>
+            <td th:text="${item[rcpt_dtl]}"></td>
+            <td th:text="${item[prcs_user]}"></td>
+            <td th:text="${item[prcs_dt]}"></td>
+            <td th:text="${item[prcs_dtl]}"></td>
+            <td th:text="${item[prcs_gu]}"></td>
+            <td th:text="${item[rcpt_user_no]}"></td>
+            <td th:text="${item[prcs_user_no]}"></td>
+            <td th:text="${item[rcpt_team]}"></td>
+            <td th:text="${item[prcs_team]}"></td>
+        </tr>-->
+       
+			 <tr th:each="item : ${list}">
+            <td th:text="${item.sch_d}"></td>
+            <td th:text="${item.sch_seq}"></td>
+            <td th:text="${item.req_org}"></td>
+            <td th:text="${item.req_dept}"></td>
+            <td th:text="${item.req_name}"></td>
+            <td th:text="${item.req_tel}"></td>
+            <td th:text="${item.rcpt_user}"></td>
+            <td th:text="${item.rcpt_dt}"></td>
+            <td th:text="${item.rcpt_dtl}"></td>
+            <td th:text="${item.prcs_user}"></td>
+            <td th:text="${item.prcs_dt}"></td>
+            <td th:text="${item.prcs_dtl}"></td>
+            <td th:text="${item.prcs_gu}"></td>
+            <td th:text="${item.rcpt_user_no}"></td>
+            <td th:text="${item.prcs_user_no}"></td>
+            <td th:text="${item.rcpt_team}"></td>
+            <td th:text="${item.prcs_team}"></td>
+        </tr>
+			
+       </tbody>
+</table>
+</body>
+
+</html>

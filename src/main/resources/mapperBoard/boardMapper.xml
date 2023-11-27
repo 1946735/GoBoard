@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.gibisboard.dao.Dao">
+
+<!-- <select id="findAll" resultType="com.gibisboard.entity.GIBIS_MR_M"> -->
+	<select id="findAll" resultType="com.gibisboard.entity.GIBIS_MR_M">
+	SELECT * FROM GIBIS_MR_M
+	ORDER BY 1 DESC,2 DESC
+</select>	
+
+</mapper>
